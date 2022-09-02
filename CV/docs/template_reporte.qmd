@@ -1,0 +1,74 @@
+---
+title: "Reporte Quarto"
+author: Alex Medina
+date: 02/09/2022
+format:
+  pdf: 
+    # cite-method: biblatex
+    # toc: true # descomentar solo si se quiere tabla de contenidos
+    # documentclass: scrartcl # por defecto, KOMA-Script class
+                              # otras opciones: article, report
+    # papersize: letter # otras opciones, a4
+    number-sections: true
+    colorlinks: true
+bibliography: references.bib
+csl: apa.csl
+lang: es
+jupyter: python3
+fig-pos: 'h'
+---
+
+Definir el problema
+
+1. Definir el objetivo para una audiencia amplia, por ejemplo, en términos de negocios. Esto servirá como set-point. Tu solución debe estar tan cerca de este objetivo como sea posible, y harás bien en tenerlo presente siempre.
+
+Lograr la segmentacion de prendas variadas de ropa por medio de la utilizacion de algoritmos de Vision por Computadora y "Deep Learning"
+
+2. Cómo será usada la solución.
+
+
+
+3. Cuáles son las soluciones actuales alternativas (de haberlas).
+
+
+
+4. Definición del problema propiamente, es decir, formular los aspectos de forma abstracta con lenguaje de matemáticas. 
+
+
+
+5. Restringe el rango de soluciones para el problema. Por ejemplo, ¿dirías que el problema es supervizado/no supervizado, online/offline?
+
+El problema utiliza un conjuto de datos que contienen etiquetas que identifican el tipo de prenda que está representada en la imagen a analizar.
+Es un tipo de problema online, debido a que se pretende tener los datos completos a utilizar ya almacenados e ir mejorando el modelo con nuevos datos.
+
+6. Cómo deberás medir la ejecución del modelo.
+
+Obteniendo el porcentaje de predicciones correctas que el modelo pueda realizar sobre un conjunto de datos de prueba despues de realizar el entrenamiento.
+Tambien se pretende tomar en cuenta el tiempo de entrenamiento de los modelos.
+
+7. ¿La forma de medir la ejecución se alínea con los objetivos del negocio?
+
+Sí
+
+8. ¿Cuál es el nivel de ejecución mínima para cumplir con el objetivo del negocio?
+
+Un 80% de predicciones correctas.
+
+9. ¿Se puede usar la solución en problemas *comparables*? ¿Se pueden usar la experiencia o las herramientas?
+
+
+
+10. ¿Existe experticia humana disponible para el problema?
+
+Si. Un humano con desarrollo congnitivo normal es capaz de realizar la segmentacion e identificacion de prendas de ropa si observa una imagen de ella.
+
+11. Lista las asunciones que has hecho hasta ahora.
+
+
+
+12. Verifica si las asunciones se cumplen.
+
+
+
+
+
