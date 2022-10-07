@@ -9,7 +9,7 @@ format:
     # documentclass: scrartcl # por defecto, KOMA-Script class
                               # otras opciones: article, report
     # papersize: letter # otras opciones, a4
-    number-sections: true
+    number-sections: false
     colorlinks: true
 bibliography: references.bib
 csl: apa.csl
@@ -18,58 +18,76 @@ jupyter: python3
 fig-pos: 'h'
 ---
 
-Definir el problema
+## Definir el problema
 
 1. Definir el objetivo para una audiencia amplia, por ejemplo, en términos de negocios. Esto servirá como set-point. Tu solución debe estar tan cerca de este objetivo como sea posible, y harás bien en tenerlo presente siempre.
 
-Lograr la segmentación de prendas variadas de ropa por medio de la utilización de algoritmos de Vision por Computadora y "Deep Learning". Esto implica la creación y optimización de modelos de clasificación que serán aplicados sobre un conjunto de imágenes que contienen una prenda de ropa especifica.
+    Lograr la segmentación de prendas variadas de ropa por medio de la utilización de algoritmos de Vision por Computadora y "Deep Learning". Esto implica la creación y optimización de modelos de clasificación que serán aplicados sobre un conjunto de imágenes que contienen una prenda de ropa especifica.
 
 2. Cómo será usada la solución.
 
-El modelo será entrenado con un conjunto de imágenes de prendas de ropa variadas y etiquetas. Una vez que el modelo de entrenamiento sea lo suficientemente capaz de realizar la identificación de las prendas en las imágenes, este mismo modelo será probado sobre un conjunto nuevo.
+    El modelo será entrenado con un conjunto de imágenes de prendas de ropa variadas y etiquetas. Una vez que el modelo de entrenamiento sea lo suficientemente capaz de realizar la identificación de las prendas en las imágenes, este mismo modelo será probado sobre un conjunto nuevo.
 
 3. Cuáles son las soluciones actuales alternativas (de haberlas).
 
-Ademas de la alternativa básica que consiste en utilizar a una persona para clasificar lo que puede observar en las imágenes, también ya existen herramientas similares de vision por computadora capaces de lograr dicha segmentación. Un ejemplo de estas herramientas es Google Cloud AutoML Vision, el cual es una herramienta de paga y en linea que puede ser utilizada incluso sin la necesidad de conocer sobre temas de desarrollo o programación para aprender como funciona. 
+    Ademas de la alternativa básica que consiste en utilizar a una persona para clasificar lo que puede observar en las imágenes, también ya existen herramientas similares de vision por computadora capaces de lograr dicha segmentación. Un ejemplo de estas herramientas es Google Cloud AutoML Vision, el cual es una herramienta de paga y en linea que puede ser utilizada incluso sin la necesidad de conocer sobre temas de desarrollo o programación para aprender como funciona. 
 
 4. Definición del problema propiamente, es decir, formular los aspectos de forma abstracta con lenguaje de matemáticas. 
 
-(DIAGRAMA)
+    (DIAGRAMA)
 
 5. Restringe el rango de soluciones para el problema. Por ejemplo, ¿dirías que el problema es supervisado/no supervisado, online/offline?
 
-El problema utiliza un conjunto de datos que contienen etiquetas que identifican el tipo de prenda que está representada en la imagen a analizar, por lo tanto se trata de un problema supervisado.
-Es un tipo de problema online, debido a que se pretende tener los datos completos a utilizar ya almacenados e ir mejorando el modelo con nuevos datos.
+    El problema utiliza un conjunto de datos que contienen etiquetas que identifican el tipo de prenda que está representada en la imagen a analizar, por lo tanto se trata de un problema supervisado.
+    Es un tipo de problema online, debido a que se pretende tener los datos completos a utilizar ya almacenados e ir mejorando el modelo con nuevos datos.
 
 6. Cómo deberás medir la ejecución del modelo.
 
-Obteniendo el porcentaje de predicciones correctas que el modelo pueda realizar sobre un conjunto de datos de prueba después de realizar el entrenamiento.
-También se pretende tomar en cuenta el tiempo de entrenamiento de los modelos.
+    Obteniendo el porcentaje de predicciones correctas que el modelo pueda realizar sobre un conjunto de datos de prueba después de realizar el entrenamiento.
+    También se pretende tomar en cuenta el tiempo de entrenamiento de los modelos.
 
 7. ¿La forma de medir la ejecución se alinea con los objetivos del negocio?
 
-Sí. Tomando como base el trabajo que una persona podría realizar resulta bastante simple medir el desempeño que los modelos logren, ya sea por el porcentaje de predicciones correctas y el tiempo en el que logre completar la clasificación.
+    Sí. Tomando como base el trabajo que una persona podría realizar resulta bastante simple medir el desempeño que los modelos logren, ya sea por el porcentaje de predicciones correctas y el tiempo en el que logre completar la clasificación.
 
 8. ¿Cuál es el nivel de ejecución mínima para cumplir con el objetivo del negocio?
 
-Se estima que el ojo de una persona experta en el tema llega a lograr un error de aproximadamente el 5% sobre un dataset de 1500 imágenes y 1000 clases del Large Scale Visual Recognition Challenge (ILSVRC). Por lo tanto al el objetivo es obtener al menos un 95% de predicciones correctas que representaría un desempeño similar al de una persona.
+    Se estima que el ojo de una persona experta en el tema llega a lograr un error de aproximadamente el 5% sobre un dataset de 1500 imágenes y 1000 clases del Large Scale Visual Recognition Challenge (ILSVRC). Por lo tanto al el objetivo es obtener al menos un 95% de predicciones correctas que representaría un desempeño similar al de una persona.
 
 9. ¿Se puede usar la solución en problemas *comparables*? ¿Se pueden usar la experiencia o las herramientas?
 
-Sí, la solución debería ser posible de utilizar con con problemas similares. Tanto la experiencia y las herramientas que se obtengan en este problema se pueden trasponer relativamente fácil sobre conjuros de datos similares.
-Existen ya varios modelos de vision por computadora que realizan un procedimiento similar pero aplicado sobre conjuros de datos diferentes o con contexto diferentes.
+    Sí, la solución debería ser posible de utilizar con con problemas similares. Tanto la experiencia y las herramientas que se obtengan en este problema se pueden trasponer relativamente fácil sobre conjuros de datos similares.
+    Existen ya varios modelos de vision por computadora que realizan un procedimiento similar pero aplicado sobre conjuros de datos diferentes o con contexto diferentes.
 
 10. ¿Existe experticia humana disponible para el problema?
 
-Si. Un humano con desarrollo cognitivo normal es capaz de realizar la segmentación e identificación de prendas de ropa si observa una imagen de ella con relativa facilidad. Ademas como ya se menciono anteriormente una persona experta puede incluso realizar tal clasificación con aproximadamente un 5% de error.
+    Si. Un humano con desarrollo cognitivo normal es capaz de realizar la segmentación e identificación de prendas de ropa si observa una imagen de ella con relativa facilidad. Ademas como ya se menciono anteriormente una persona experta puede incluso realizar tal clasificación con aproximadamente un 5% de error.
 
 11. Lista las asunciones que has hecho hasta ahora.
 
-- El conjunto de datos es usable.
+    - El conjunto de datos es usable.
 
 12. Verifica si las asunciones se cumplen.
 
-- [x] El conjunto de datos es usable.
+    - [x] El conjunto de datos es usable.
+
+## Obtención de datos
+
+1. Automatiza tanto como puedas la obtención de datos, para tener datos frescos (puede ser en script de Python/R, o Jupyter Notebook. Si son datos privados puedes omitir este paso).
+
+2. Documenta cómo obtuviste los datos y cuánto espacio ocuparán (Quarto).
+
+3. Revisa las obligaciones legales de los datos, u obtén autorización para usarlos y/o publicar derivados de ellos (escribir brevemente la situación legal en Quarto).
+
+4. Crea un espacio de trabajo (workspace) con espacio suficiente para almacenar los datos (opcional).
+
+5. Convierte los datos en un formato que puedas manipular fácilmente (e.g., csv) sin cambiar los datos en sí (Github, pero sujeto al punto 2).
+
+6. Asegúrate de que la información sensible ha sido omitida (nombres, direcciones, etc; anonimízalos) (Github, pero sujeto al punto 2).
+
+7. Revisa qué tipo de datos tienes (¿son series de tiempo, datos geográficos, una combinación de diferentes tipos?).
+
+8. Toma una muestra de prueba (test set), separarla y no la uses (Github, pero sujeto al punto 2).
 
 
 
