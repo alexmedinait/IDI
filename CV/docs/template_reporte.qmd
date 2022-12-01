@@ -92,9 +92,9 @@ Verifica si las asunciones se cumplen.
 
 # Obtención de datos
 
-El conjunto de datos que será utilizado como para entrenar los modelos a probar fue obtenido desde [Kaggle](https://kaggle.com), la cual es una plataforma para practicantes y profesionales del area de Ciencia de Datos donde los usuarios pueden publicar conjuntos de datos para realizar exploracion de datos, construccion de modelos, así como participar en competencias entre los mismo usuarios.
+El conjunto de datos que será utilizado como para entrenar los modelos a probar fue obtenido desde [Kaggle](https://kaggle.com), la cual es una plataforma para practicantes y profesionales del area de Ciencia de Datos donde los usuarios pueden publicar conjuntos de datos para realizar exploración de datos, construcción de modelos, así como participar en competencias entre los mismo usuarios.
 
-En este caso el repositorio que será utilizado en esta investigacion se puede descargar desde el siguiente [link](https://www.kaggle.com/datasets/agrigorev/clothing-dataset-full).
+En este caso el repositorio que será utilizado en esta investigación se puede descargar desde el siguiente [link](https://www.kaggle.com/datasets/agrigorev/clothing-dataset-full).
 
 ![Muestra del contenido del conjunto de datos](figs/dataset-cover.png){#fig-example}
 
@@ -114,3 +114,11 @@ Los datos ya están en un formato manejable:
 No existe información sensible, por lo que este paso ha sido excluido.
 
 Para obtener los datos de manera automática se hace uso de la API (Application Program Interface) que proporciona el propio Kaggle. Lo único necesario es generar un *token* o firma cifrada que permite una autentificación dentro del sitio y así poder descargar el repositorio.
+
+# Exploración de los datos
+
+Resultados disponible en el documento de Jupyter.
+
+# Preparación de los datos
+
+Resultados disponible en el documento de Jupyter.
